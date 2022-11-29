@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imv_Image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/blog"
+        android:background="@color/black"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/txt_Tittle"
+            android:text="Nerd đang phát triển và hợp tác cùng trung tâm mới tại Vũng Tàu"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/txt_Xemthem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Xem thêm >"
+                android:paddingEnd="15dp"
+                android:textColor="#A0A0A0"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -9,6 +9,7 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,6 +22,7 @@ public class homepage extends AppCompatActivity {
     String username = General.Us.getUsername();
     ImageView imvavatar;
     ImageButton imbCourse1, imbBlog1, imbBlog2, imbBlog3 ;
+    Button btnAllBlog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +41,7 @@ public class homepage extends AppCompatActivity {
         imbBlog1 = findViewById(R.id.imb_Blog1);
         imbBlog2 = findViewById(R.id.imb_Blog2);
         imbBlog3 = findViewById(R.id.imb_Blog3);
+        btnAllBlog = findViewById(R.id.btn_allBlog);
     }
 
 
@@ -115,7 +118,15 @@ public class homepage extends AppCompatActivity {
                 startActivity(blog3);
             }
         });
-    }
+            btnAllBlog.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent allBlog = new Intent(homepage.this, news.class);
+                    startActivity(allBlog);
+                }
+            });
+        }
+        
 
 
 }
