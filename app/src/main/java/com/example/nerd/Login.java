@@ -124,14 +124,11 @@ public class Login extends AppCompatActivity {
     }
 
 
-
-
     private void getData() {
         Intent intentGetData = getIntent();
         edtUsername.setText(intentGetData.getStringExtra("Name_To_Login"));
 
     }
-
 
     private void linkViews() {
         btnLogin = findViewById(R.id.btn_Login);

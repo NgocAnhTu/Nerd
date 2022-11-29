@@ -20,7 +20,7 @@ public class homepage extends AppCompatActivity {
     TextView txtName;
     String username = General.Us.getUsername();
     ImageView imvavatar;
-    ImageButton imbCourse1;
+    ImageButton imbCourse1, imbBlog1, imbBlog2, imbBlog3 ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +36,9 @@ public class homepage extends AppCompatActivity {
         txtName = findViewById(R.id.txt_Name);
         imbCourse1 = findViewById(R.id.imbCourse1);
         imvavatar = findViewById(R.id.imv_avatar);
+        imbBlog1 = findViewById(R.id.imb_Blog1);
+        imbBlog2 = findViewById(R.id.imb_Blog2);
+        imbBlog3 = findViewById(R.id.imb_Blog3);
     }
 
 
@@ -88,6 +91,28 @@ public class homepage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent course1 = new Intent(homepage.this, khoahocchitiet.class);
                 startActivity(course1);
+            }
+        });
+
+        imbBlog1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent blog1 = new Intent(homepage.this, Blog.class);
+                startActivity(blog1);
+            }
+        });
+        imbBlog2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent blog2 = new Intent(homepage.this, Blog.class);
+                startActivity(blog2);
+            }
+        });
+        imbBlog3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent blog3 = new Intent(homepage.this, Blog.class);
+                startActivity(blog3);
             }
         });
     }

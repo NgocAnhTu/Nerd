@@ -3,7 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_homepage.xml" value="0.25" />
+        <entry key="..\:/android1/DoAnCK/app/src/main/res/drawable/edittext_button_style_rounded.xml" value="0.202" />
+        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_blog.xml" value="0.25" />
+        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_homepage.xml" value="0.136" />
+        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_khoahocchitiet.xml" value="0.25" />
+        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_loading_screen.xml" value="0.25" />
+        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_user_page.xml" value="0.25" />
         <entry key="..\:/android1/Nerd4/app/src/main/res/drawable/blurbg.xml" value="0.1995" />
         <entry key="..\:/android1/Nerd4/app/src/main/res/layout/activity_courses.xml" value="0.24635416666666668" />
         <entry key="..\:/android1/Nerd4/app/src/main/res/layout/activity_forgot_pass.xml" value="0.24635416666666668" />

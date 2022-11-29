@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Blog"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/post_detail_img"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/blog" />
+
+    <TextView
+        android:id="@+id/post_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:lineSpacingExtra="4dp"
+        android:text="Học 100 từ tiếng anh trong 15 phút"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:background="#777777"
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/post_detail_date_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="28 Nov 20222 | by Ngoc Anh Tu" />
+
+    <TextView
+
+        android:textColor="#373737"
+        android:lineSpacingExtra="8dp"
+        android:id="@+id/post_detail_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Học từ vựng tiếng Anh mỗi ngày cùng ứng dụng ELSA Speak Với hơn 6000 bài luyện tập cùng 1600 bài học phong phú, người học tiếng Anh sẽ có cơ hội sử dụng và ôn luyện thường xuyên các từ đã học. Ngoài ra, Nerd còn cung cấp một từ điển phát âm chuẩn IPA chuyên biệt để hỗ trợ luyện phát âm chuẩn, nhận diện âm chuẩn khi nghe, và nói.
+Hiệu quả mà Nerd đem lại đã được chứng minh từ kết quả học tập của rất nhiều người dùng. Chỉ với 10 phút học từ vựng tiếng Anh miễn phí mỗi ngày cùng Nerd, hiệu quả học tập đã được cải thiện tới 40%." />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_gravity="center"
+      android:layout_marginTop="20dp">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/post_detail_currentuser_img"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/avt1" />
+
+    <EditText
+        android:hint="Write Comment"
+        android:background="@drawable/edittext_button_style_rounded"
+        android:id="@+id/post_detail_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/post_detail_add_comment_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="#6DCCDA"
+        android:text="Gửi " />
+</LinearLayout>
+
+</LinearLayout>
