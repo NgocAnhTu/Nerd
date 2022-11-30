@@ -9,7 +9,7 @@ public class Users {
     private String Email;
     private Integer Birth;
     private byte[] Photo;  
-////
+
     public Users(Integer ID, String username, String password, String fullname, Integer phone, String email, Integer birth, byte[] photo) {
         this.ID = ID;
         this.Username = username;

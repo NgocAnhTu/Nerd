@@ -49,16 +49,17 @@
                         android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
 
                     <TextView
+                        android:id="@+id/txtUserName"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginStart="70dp"
                         android:layout_marginBottom="5dp"
+                        android:layout_weight="5"
                         android:text="Ngọc Anh Từ"
                         android:textColor="@color/black"
                         android:textSize="28sp"
-                        android:textStyle="bold"
-                        android:layout_weight="5"/>
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -97,15 +98,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="60dp"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="15dp"
-                    android:text="Đổi mật khẩu"
                     android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:text="Thông tin cá nhân"
                     android:textColor="@color/black"
                     android:textSize="26sp"
                     android:textStyle="bold" />
@@ -118,13 +119,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mật khẩu hiện tại"
+                        android:text="Họ và Tên"
                         android:textColor="@color/black"
                         android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <EditText
-                        android:id="@+id/edtCurrentPass"
+                        android:id="@+id/edtFullName"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginTop="20dp"
@@ -143,13 +144,13 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mật khẩu mới"
+                        android:text="Email"
                         android:textColor="@color/black"
                         android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <EditText
-                        android:id="@+id/edtNewPass"
+                        android:id="@+id/edtEmail"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginTop="20dp"
@@ -168,13 +169,38 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nhập lại mật khẩu mới"
+                        android:text="Số điện thoại"
                         android:textColor="@color/black"
                         android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <EditText
-                        android:id="@+id/edtReEnterPassword"
+                        android:id="@+id/edtPhoneNumb"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/roundglass"
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ngày sinh"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtBirthDay"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginTop="20dp"
@@ -186,13 +212,13 @@
                 </LinearLayout>
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnUpdatePass"
+                    android:id="@+id/btnUpdateUserInFo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Lưu mật khẩu mới"
+                    android:background="@drawable/button_color"
+                    android:text="Cập nhật thông tin cá nhân"
                     android:textColor="@color/white"
-                    android:textStyle="bold"
-                    android:background="@drawable/button_color"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
 

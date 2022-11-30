@@ -33,7 +33,6 @@
                 android:layout_height="200dp"
                 android:layout_marginBottom="20dp"
                 android:layout_weight="1"
-                android:background="@drawable/user_page_rec"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -52,11 +51,10 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginStart="70dp"
                         android:layout_marginBottom="5dp"
-                        android:text="Ngọc Anh Từ"
+                        android:text="Ý kiến khác"
                         android:textColor="@color/black"
-                        android:textSize="28sp"
+                        android:textSize="20dp"
                         android:textStyle="bold"
                         android:layout_weight="5"/>
 
@@ -72,7 +70,7 @@
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/avt1"
+                        android:src="@drawable/logo"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -97,102 +95,53 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="60dp"
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="15dp"
-                    android:text="Đổi mật khẩu"
-                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="Bạn muốn Nerd cải thiện điều gì?"
+                    android:textColor="#0C0C06"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/edtCaithien"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/roundglass"
                     android:textColor="@color/black"
-                    android:textSize="26sp"
-                    android:textStyle="bold" />
+                    android:textSize="25dp" />
 
-                <LinearLayout
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_marginBottom="10dp"
+                    android:text="Bạn có sẵn lòng giới thiệu Nerd với bạn bè để nhận ưu đãi giảm giá cho khóa học?"
+                    android:textColor="#0C0C06"
+                    android:textSize="20dp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Mật khẩu hiện tại"
-                        android:textColor="@color/black"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-
-                    <EditText
-                        android:id="@+id/edtCurrentPass"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="20dp"
-                        android:background="@drawable/roundglass"
-                        android:textColor="@color/black"
-                        android:textSize="25dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
+                <EditText
+                    android:id="@+id/edtGioithieu"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Mật khẩu mới"
-                        android:textColor="@color/black"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-
-                    <EditText
-                        android:id="@+id/edtNewPass"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="20dp"
-                        android:background="@drawable/roundglass"
-                        android:textColor="@color/black"
-                        android:textSize="25dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Nhập lại mật khẩu mới"
-                        android:textColor="@color/black"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-
-                    <EditText
-                        android:id="@+id/edtReEnterPassword"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="20dp"
-                        android:background="@drawable/roundglass"
-                        android:textColor="@color/black"
-                        android:textSize="25dp" />
-
-                </LinearLayout>
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/roundglass"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnUpdatePass"
+                    android:id="@+id/btnUpdateUserInFo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Lưu mật khẩu mới"
+                    android:background="@drawable/button_color"
+                    android:text="Gửi ý kiến"
                     android:textColor="@color/white"
-                    android:textStyle="bold"
-                    android:background="@drawable/button_color"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
 

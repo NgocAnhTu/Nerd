@@ -6,17 +6,59 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity {
+public class Phanhoi extends AppCompatActivity {
 
+    ImageView imvBack;
+    Button btnKhaosat, btnYkienkhac;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_phanhoi);
 
+        setEvent();
+        bottomNav();
+        linkViews();
+    }
+
+    private void linkViews() {
+        imvBack = findViewById(R.id.imv_back);
+        btnKhaosat = findViewById(R.id.btn_Khaosat);
+        btnYkienkhac = findViewById(R.id.btn_Ykienkhac);
+    }
+
+    private void setEvent() {
+        imvBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+        btnKhaosat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Phanhoi.this, Khaosat.class);
+                startActivity(intent);
+            }
+        });
+
+        btnYkienkhac.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Phanhoi.this, Ykienkhac.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    private void bottomNav() {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.Homepage);
 
@@ -42,7 +84,5 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
     }
-
 }
