@@ -10,7 +10,7 @@
         android:id="@+id/imv_Image"
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        android:src="@drawable/blog"
+        android:src="@drawable/nerd18"
         android:background="@color/black"
         />
     <LinearLayout
@@ -20,7 +20,7 @@
         android:padding="5dp">
         <TextView
             android:id="@+id/txt_Tittle"
-            android:text="Nerd đang phát triển và hợp tác cùng trung tâm mới tại Vũng Tàu"
+            android:text="Học 100 từ tiếng anh trong 15 phút"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="20dp"
@@ -43,5 +43,4 @@
                 android:textColor="#A0A0A0"/>
         </LinearLayout>
     </LinearLayout>
-
 </LinearLayout>

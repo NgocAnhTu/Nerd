@@ -57,6 +57,7 @@ public class NewsAdapter extends BaseAdapter {
         } else {
             holder =(ViewHolder) view.getTag();
         }
+
         MNews n = news.get(i);
         holder.imvImage.setImageResource(n.getThump());
         holder.txtTittle.setText(n.getTittle());
