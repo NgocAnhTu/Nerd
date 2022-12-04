@@ -100,29 +100,29 @@ public class homepage extends AppCompatActivity {
         imbBlog1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent blog1 = new Intent(homepage.this, Blog.class);
-                startActivity(blog1);
+                Intent intent = new Intent(homepage.this, Blog.class);
+                startActivity(intent);
             }
         });
         imbBlog2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent blog2 = new Intent(homepage.this, Blog.class);
-                startActivity(blog2);
+                Intent intent = new Intent(homepage.this, Blog.class);
+                startActivity(intent);
             }
         });
         imbBlog3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent blog3 = new Intent(homepage.this, Blog.class);
-                startActivity(blog3);
+                Intent intent = new Intent(homepage.this, Blog.class);
+                startActivity(intent);
             }
         });
         btnAllBlog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent allBlog = new Intent(homepage.this, news.class);
-                startActivity(allBlog);
+                Intent all = new Intent(homepage.this, news.class);
+                startActivity(all);
             }
         });
     }
