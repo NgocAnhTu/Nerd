@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">DoAnCK</string>
     <string name="ketqua"> <u>70 kết quả</u> </string>
+
+    <string name="underline_toeic"><u>Đăng ký thi Toeic</u></string>
+    <string name="underline_ielts"><u>Đăng ký thi Ielts</u></string>
 </resources>
