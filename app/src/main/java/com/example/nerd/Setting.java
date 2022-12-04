@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class Setting extends AppCompatActivity {
 
     ImageView imvBack;
-    Button btnDoimaukhau, btnThongbao, btnDoiEmail, btnDangxuat, btnConfirm, btnCancel;
+    Button btnDoimaukhau, btnThongbao, btnDoiEmail, btnDangxuat, btnConfirm, btnCancel, btnLang;
     FirebaseAuth authProfile;
 
     @Override
@@ -40,6 +40,7 @@ public class Setting extends AppCompatActivity {
         btnThongbao = findViewById(R.id.btn_Thongbao);
         btnDangxuat = findViewById(R.id.btn_Dangxuat);
         btnDoiEmail = findViewById(R.id.btn_ChangeEmail);
+        btnLang = findViewById(R.id.btn_ngonngu);
     }
 
     private void setEvents() {
@@ -54,6 +55,14 @@ public class Setting extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Setting.this, ChangePassword.class);
+                startActivity(intent);
+            }
+        });
+
+        btnLang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Setting.this, ChangeLanguage.class);
                 startActivity(intent);
             }
         });
