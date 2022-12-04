@@ -12,11 +12,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Setting extends AppCompatActivity {
 
     ImageView imvBack;
-    Button btnDoimaukhau, btnThongbao, btnNgonngu, btnDangxuat, btnConfirm, btnCancel;
+    Button btnDoimaukhau, btnThongbao, btnDoiEmail, btnDangxuat, btnConfirm, btnCancel;
+    FirebaseAuth authProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,9 @@ public class Setting extends AppCompatActivity {
         linkViews();
         bottomNav();
         setEvents();
+
+        authProfile = FirebaseAuth.getInstance();
+        authProfile.getCurrentUser();
     }
 
     private void linkViews() {
@@ -33,6 +39,7 @@ public class Setting extends AppCompatActivity {
         btnDoimaukhau = findViewById(R.id.btn_doimatkhau);
         btnThongbao = findViewById(R.id.btn_Thongbao);
         btnDangxuat = findViewById(R.id.btn_Dangxuat);
+        btnDoiEmail = findViewById(R.id.btn_ChangeEmail);
     }
 
     private void setEvents() {
@@ -46,7 +53,7 @@ public class Setting extends AppCompatActivity {
         btnDoimaukhau.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Setting.this, ForgotPass.class);
+                Intent intent = new Intent(Setting.this, ChangePassword.class);
                 startActivity(intent);
             }
         });
@@ -63,8 +70,12 @@ public class Setting extends AppCompatActivity {
                 btnConfirm.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
+                        authProfile.signOut();
                         Intent intent = new Intent(Setting.this,Login.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
+                        finish();
                     }
                 });
                 btnCancel.setOnClickListener(new View.OnClickListener() {
@@ -74,6 +85,14 @@ public class Setting extends AppCompatActivity {
                     }
                 });
                 dialog.show();
+            }
+        });
+
+        btnDoiEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Setting.this, ChangeEmail.class);
+                startActivity(intent);
             }
         });
     }

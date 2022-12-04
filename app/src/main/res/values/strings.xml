@@ -34,4 +34,13 @@
     <string name="dieukhoan">
         <p>Học viên không được gây phiền phức hay có hành vi gây cản trở hoặc bất kỳ thiệt hại đến hình ảnh, danh dự và tài sản của trung tâm và nhân viên của ISE hoặc của bên thứ ba bất kỳ trong khuôn viên của các Trung tâm ISE. Học viên đồng ý tuân thủ nghiêm chỉnh Quy định của ISE tại Trung tâm mà Học viên đang theo học. ISE có quyền huỷ bỏ Hợp đồng bất cứ lúc nào và giữ lại toàn bộ các khoản học phí của khoá học mà Học viên đã đóng cho ISE và ISE có quyền ngừng cung cấp khoá học cho Học viên nếu Học viên vi phạm bất kỳ điều khoản nào trong Hợp đồng này. Học viên đồng ý không khiếu kiện gì về trách nhiệm dân sự đối với ISE và viên chức, nhân viên hay đại diện của Công ty. Hợp đồng sẽ được điều chỉnh và giải thích theo luật Việt Nam. Hợp đồng được lập bằng tiếng Việt và tiếng Anh. Nếu có sự khác biệt giữa 2 ngôn ngữ trong bất kỳ điều khoản nào của Hợp đồng, các bên đồng ý rằng điều khoản bằng tiếng Việt sẽ được ưu tiên sử dụng. Cả hai bên đã đọc và hiểu rõ nội dung, nhận thấy nội dung thể hiện đúng theo sự thoả thuận và quyết định ký hợp đồng vào ngày tháng năm ghi ở phần trên. Hợp đồng này có hiệu lực từ ngày ký bởi hai bên. Hợp đồng này được lập thành hai (02) bản có giá trị pháp lý như nhau, mỗi bên giữ một (01) bản. </p>
     </string>
+    <string name="title_activity_change_email">ChangeEmail</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,16 +15,27 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.firebase.ReadWriteUserDetails;
 import com.example.utils.General;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
+
+import java.util.Calendar;
 
 public class UserPage extends AppCompatActivity {
 
     ImageView imvAvatar;
     ImageButton imbCamera;
-    TextView txtUserName;
+    TextView txtName, txtEmail, txtPhone, txtDOB;
     Button btnThongtincanhan, btnQuydinhlophoc, btnDieukhoan, btnLienhe, btnPhanhoi, btnCaidat;
-    String username = General.Us.getUsername();
+    FirebaseAuth authProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,12 +44,45 @@ public class UserPage extends AppCompatActivity {
 
         linkViews();
         bottomNav();
-        showInfo();
         setEvents();
+
+        authProfile = FirebaseAuth.getInstance();
+        FirebaseUser firebaseUser = authProfile.getCurrentUser();
+        if(firebaseUser != null) {
+            showInfo(firebaseUser);
+        }
+    }
+
+    private void showInfo(FirebaseUser firebaseUser) {
+        String userID = firebaseUser.getUid();
+        DatabaseReference referenceProfile = FirebaseDatabase.getInstance().getReference("Users");
+        referenceProfile.child(userID).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                ReadWriteUserDetails readUserDetails = snapshot.getValue(ReadWriteUserDetails.class);
+                if(readUserDetails != null){
+                    txtName.setText(readUserDetails.name);
+                    txtEmail.setText(firebaseUser.getEmail());
+                    txtDOB.setText(readUserDetails.doB);
+                    txtPhone.setText(readUserDetails.phone);
+
+                    Uri uri = firebaseUser.getPhotoUrl();
+                    Picasso.get().load(uri).into(imvAvatar);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
 
     private void linkViews() {
-        txtUserName = findViewById(R.id.txtUserName);
+        txtName = findViewById(R.id.txtName);
+        txtEmail = findViewById(R.id.txtEmail);
+        txtPhone = findViewById(R.id.txtPhone);
+        txtDOB = findViewById(R.id.txtDOB);
         imvAvatar = findViewById(R.id.imvAvatar);
         imbCamera = findViewById(R.id.imbCamera);
         btnThongtincanhan = findViewById(R.id.btn_thongtincanhan);
@@ -50,37 +95,27 @@ public class UserPage extends AppCompatActivity {
 
     private void bottomNav() {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.Homepage);
+        bottomNavigationView.setSelectedItemId(R.id.user);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.Homepage:
+                        startActivity(new Intent(getApplicationContext(), homepage.class));
                         return true;
                     case R.id.courses:
-                        startActivity(new Intent(getApplicationContext(),Courses.class));
-                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), Courses.class));
                         return true;
                     case R.id.calendar:
-                        startActivity(new Intent(getApplicationContext(), lichhoc.class));
-                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), Calendar.class));
                         return true;
                     case R.id.user:
-                        startActivity(new Intent(getApplicationContext(),UserPage.class));
-                        overridePendingTransition(0,0);
                         return true;
                 }
                 return false;
             }
         });
-    }
-
-    private void showInfo() {
-        byte[] photo = General.ADB.ShowInfo(username).getBlob(7);
-        Bitmap bitmap = BitmapFactory.decodeByteArray(photo, 0, photo.length);
-        imvAvatar.setImageBitmap(bitmap);
-        txtUserName.setText(General.ADB.ShowInfo(username).getString(3));
     }
 
     private void setEvents() {

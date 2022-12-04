@@ -3,18 +3,17 @@
     <item
         android:id="@+id/Homepage"
         android:icon="@drawable/ic_baseline_home_24"
-        android:title="HomePage"/>
+        android:title="Trang chủ"/>
     <item
         android:id="@+id/courses"
         android:icon="@drawable/ic_baseline_shop_two_24"
-        android:title="Courses"/>
+        android:title="Khoá học"/>
     <item
         android:id="@+id/calendar"
         android:icon="@drawable/ic_baseline_calendar_month_24"
-        android:title="Calendars"/>
-
+        android:title="TKB"/>
     <item
         android:id="@+id/user"
         android:icon="@drawable/profile"
-        android:title="Profile"/>
+        android:title="Hồ sơ"/>
 </menu>

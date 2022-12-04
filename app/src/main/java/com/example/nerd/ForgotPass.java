@@ -1,8 +1,13 @@
 package com.example.nerd;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -10,13 +15,17 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.utils.General;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 
 public class ForgotPass extends AppCompatActivity {
 
-    EditText edtPass, edtNewPass,edtReEnter;
-    Button btnUpdate;
-    ImageView imvBack;
-    String username = General.Us.getUsername();
+    EditText edtEmail;
+    Button btnRsPass;
+    FirebaseAuth authProfile;
+    private static final String TAG = "ForgotPass";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,45 +37,55 @@ public class ForgotPass extends AppCompatActivity {
     }
 
     private void linkViews() {
-        imvBack = findViewById(R.id.imv_back);
-        edtPass = findViewById(R.id.edtCurrentPass);
-        edtNewPass = findViewById(R.id.edtNewPass);
-        edtReEnter = findViewById(R.id.edt_ReEnterPassword);
-        btnUpdate = findViewById(R.id.btnUpdatePass);
+        edtEmail = findViewById(R.id.edtEmail);
+        btnRsPass = findViewById(R.id.btnResetPass);
     }
 
     private void getEvents() {
-        imvBack.setOnClickListener(new View.OnClickListener() {
+        btnRsPass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+                String email = edtEmail.getText().toString();
+                
+                if(TextUtils.isEmpty(email)) {
+                    edtEmail.setError("Vui lòng nhập Email");
+                    edtEmail.requestFocus();
+                }else if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                    edtEmail.setError("Vui lòng nhập Email hợp lệ");
+                    edtEmail.requestFocus();
+                }else {
+                    resetPassword(email);
+                }
             }
         });
+    }
 
-        btnUpdate.setOnClickListener(new View.OnClickListener() {
+    private void resetPassword(String email) {
+        authProfile = FirebaseAuth.getInstance();
+        authProfile.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
-            public void onClick(View view) {
-                String PresentPass = edtPass.getText().toString().trim();
-                String newPass = edtNewPass.getText().toString().trim();
-                String newRePass = edtReEnter.getText().toString().trim();
-                if (PresentPass.equals("")||newPass.equals("")||newRePass.equals("")){
-                    Toast.makeText(ForgotPass.this, "Vui lòng điền hết các ô!", Toast.LENGTH_SHORT).show();
-                }else {
-                    if (!General.ADB.checkUsernamePassword(username,PresentPass)){
-                        Toast.makeText(ForgotPass.this, "Mật khẩu hiện tại không đúng! ", Toast.LENGTH_SHORT).show();
-                    }else {
-                        if (newPass.equals(PresentPass)) {
-                            Toast.makeText(ForgotPass.this, "Mật khẩu mới trùng mật khẩu cũ!", Toast.LENGTH_SHORT).show();
-                        } else {
-                            if (!newPass.equals(newRePass)) {
-                                Toast.makeText(ForgotPass.this, "Nhập lại mật khẩu không đúng!", Toast.LENGTH_SHORT).show();
-                            } else {
-                                General.ADB.updatePass( username,newPass);
-                                Toast.makeText(ForgotPass.this, "Đổi mật khẩu thành công!", Toast.LENGTH_SHORT).show();
-                                finish();
-                            }
-                        }
-                    }}}
+            public void onComplete(@NonNull Task<Void> task) {
+                if(task.isSuccessful()){
+                    Toast.makeText(ForgotPass.this, "Vui lòng kiểm tra email gửi đến hoặc thư rác",
+                            Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(ForgotPass.this,Login.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK
+                            | Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    try {
+                        throw task.getException();
+                    }catch (FirebaseAuthInvalidUserException e) {
+                        edtEmail.setError("Email chưa được đăng ký");
+                        edtEmail.requestFocus();
+                    }catch (Exception e) {
+                        Log.e(TAG,e.getMessage());
+                        Toast.makeText(ForgotPass.this, e.getMessage(),
+                                Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
         });
     }
 }
