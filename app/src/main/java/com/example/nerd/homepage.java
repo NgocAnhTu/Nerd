@@ -118,15 +118,12 @@ public class homepage extends AppCompatActivity {
                 startActivity(blog3);
             }
         });
-            btnAllBlog.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent allBlog = new Intent(homepage.this, news.class);
-                    startActivity(allBlog);
-                }
-            });
-        }
-        
-
-
+        btnAllBlog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent allBlog = new Intent(homepage.this, news.class);
+                startActivity(allBlog);
+            }
+        });
+    }
 }
