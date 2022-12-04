@@ -74,6 +74,15 @@
             android:name=".Courses"
             android:exported="false" />
         <activity
+            android:name=".item_list"
+            android:exported="false" />
+        <activity
+            android:name=".news"
+            android:exported="false" />
+        <activity
+            android:name=".Blog"
+            android:exported="false" />
+        <activity
             android:name=".Login"
             android:exported="false" />
         <activity

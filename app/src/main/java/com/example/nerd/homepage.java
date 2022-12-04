@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -29,8 +30,9 @@ import com.squareup.picasso.Picasso;
 public class homepage extends AppCompatActivity {
     TextView txtName;
     String name;
-    ImageView imvavatar;
+    ImageView imvavatar,imbBlog1, imbBlog2, imbBlog3;
     ImageButton imbCourse1;
+    Button btnAllBlog;
     FirebaseAuth authProfile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +76,11 @@ public class homepage extends AppCompatActivity {
         txtName = findViewById(R.id.txt_Name);
         imbCourse1 = findViewById(R.id.imbCourse1);
         imvavatar = findViewById(R.id.imv_avatar);
+        imbBlog1 = findViewById(R.id.imb_Blog1);
+        imbBlog2 = findViewById(R.id.imb_Blog2);
+        imbBlog3 = findViewById(R.id.imb_Blog3);
+        btnAllBlog = findViewById(R.id.btn_allBlog);
+
     }
 
     private void bottomNav() {
@@ -108,6 +115,35 @@ public class homepage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent course1 = new Intent(homepage.this, khoahocchitiet.class);
                 startActivity(course1);
+            }
+        });
+
+        imbBlog1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(homepage.this, Blog.class);
+                startActivity(intent);
+            }
+        });
+        imbBlog2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(homepage.this, Blog.class);
+                startActivity(intent);
+            }
+        });
+        imbBlog3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(homepage.this, Blog.class);
+                startActivity(intent);
+            }
+        });
+        btnAllBlog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent all = new Intent(homepage.this, news.class);
+                startActivity(all);
             }
         });
     }
