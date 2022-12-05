@@ -73,7 +73,7 @@
                     android:id="@+id/ib_Noti"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/bell"
+                    android:background="@drawable/bell"
                     android:layout_marginLeft="60dp"
                     android:layout_gravity="center"/>
             </LinearLayout>
@@ -251,10 +251,12 @@
                         android:scaleType="centerCrop"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/nerd9"
+                        android:layout_marginRight="10dp"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
-                        android:layout_marginRight="10dp"/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/nerd9" />
+
                     <ImageButton
                         android:id="@+id/imb_gv2"
                         android:scaleType="centerCrop"
@@ -274,6 +276,7 @@
                         android:background="#FFFFFF" />
                 </LinearLayout>
 
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_SeeAllGV"
                     android:layout_width="wrap_content"
@@ -283,7 +286,6 @@
                     android:text="Xem tất cả"
                     android:textColor="#FFFFFF"
                     android:textSize="10dp" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -346,7 +348,6 @@
                     android:textSize="10dp"
                     android:textColor="#FFFFFF"/>
             </LinearLayout>
-
 
         </LinearLayout>
 

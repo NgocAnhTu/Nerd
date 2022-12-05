@@ -1,8 +1,6 @@
 package com.example.utils;
 
 import com.example.database.DatabaseHelper;
-import com.example.database.DatabaseHelper;
-import com.example.database.GiangVienDataBase;
 import com.example.model.Users;
 
 public class General {

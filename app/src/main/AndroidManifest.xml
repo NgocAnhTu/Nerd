@@ -28,6 +28,7 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".GiaoVien"
             android:name=".DetailsGV"
             android:exported="false">
             <meta-data

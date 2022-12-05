@@ -34,6 +34,7 @@ public class homepage extends AppCompatActivity {
     ImageButton imbCourse1, imbGV1, imbGV2, imbGV3;
     Button btnSee ,btnSeeAllGV;
     FirebaseAuth authProfile;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +45,6 @@ public class homepage extends AppCompatActivity {
 
         authProfile = FirebaseAuth.getInstance();
         FirebaseUser firebaseUser = authProfile.getCurrentUser();
-
         if(firebaseUser != null) {
             showInfo(firebaseUser);
         }
@@ -120,7 +120,6 @@ public class homepage extends AppCompatActivity {
                 startActivity(course1);
             }
         });
-
         imbBlog1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -160,7 +159,6 @@ public class homepage extends AppCompatActivity {
                 startActivity(see);
             }
         });
-
         ibNoti.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -168,7 +166,6 @@ public class homepage extends AppCompatActivity {
                 startActivity(noti);
             }
         });
-
         imbGV1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -176,7 +173,6 @@ public class homepage extends AppCompatActivity {
                 startActivity(gv1);
             }
         });
-
         imbGV2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -184,7 +180,6 @@ public class homepage extends AppCompatActivity {
                 startActivity(gv2);
             }
         });
-
         imbGV3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -193,6 +188,4 @@ public class homepage extends AppCompatActivity {
             }
         });
     }
-
-
 }

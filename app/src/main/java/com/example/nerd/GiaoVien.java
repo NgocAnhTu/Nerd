@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageButton;
-
 import com.example.adapters.GVAdapter;
 import com.example.model.Teacher;
 
