@@ -1,9 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailGV1">
+    tools:context=".DetailGV1"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/imbBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_back"
+            android:layout_marginStart="10dp"
+            android:background="#00FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GIÁO VIÊN"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imvAva"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/hoa" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/divider"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày sinh:"
+                    android:textSize="12sp"
+                    android:textColor="#A0A0A0"/>
+                <TextView
+                    android:id="@+id/tv_ns1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01/11/1999"
+                    android:layout_marginStart="5dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giới tính:"
+                        android:textSize="12sp"
+                        android:textColor="#A0A0A0"/>
+                    <TextView
+                        android:id="@+id/tv_gt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nữ"
+                        android:layout_marginStart="5dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số điện thoại:"
+                    android:textSize="12sp"
+                    android:textColor="#A0A0A0"/>
+                <TextView
+                    android:id="@+id/tv_sdt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0915367326"
+                    android:layout_marginStart="5dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/duongvien_goctron2"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Thành tích"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:drawableLeft="@drawable/thanhtich"/>
+                <TextView
+                    android:id="@+id/txtThanhTich1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="330dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="@string/thanh_tich1"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:gravity="left"
+                    android:padding="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="330dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Các lớp học đang mở"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:padding="5dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="240dp"
+                    android:src="@drawable/nerd12"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:padding="10dp">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="330dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Đánh giá"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:padding="5dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cmt1"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cmt2" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cmt3"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
