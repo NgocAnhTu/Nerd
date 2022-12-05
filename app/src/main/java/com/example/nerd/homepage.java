@@ -183,7 +183,7 @@ public class homepage extends AppCompatActivity {
         imbGV3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent gv3 = new Intent(homepage.this, DetailsGV.class);
+                Intent gv3 = new Intent(homepage.this, DetailGV2.class);
                 startActivity(gv3);
             }
         });
