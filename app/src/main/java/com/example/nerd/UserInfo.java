@@ -43,8 +43,8 @@ public class UserInfo extends AppCompatActivity {
     ImageView imvAvatar, imvBack;
     TextView txtName;
     String textPhone, textDOB, textName;
-    EditText edtName, edtEmail, edtPhone, edtDOB, edtConfirmPassword;
-    Button btnUpdateUserInfo, btnOk, btnCancel;
+    EditText edtName, edtPhone, edtDOB;
+    Button btnUpdateUserInfo, btnCancel;
     DatePickerDialog picker;
     FirebaseAuth authProfile;
 
@@ -149,6 +149,9 @@ public class UserInfo extends AppCompatActivity {
                 ReadWriteUserDetails readUserDetails = snapshot.getValue(ReadWriteUserDetails.class);
                 if(readUserDetails != null){
                     txtName.setText(readUserDetails.name);
+                    edtName.setText(readUserDetails.name);
+                    edtDOB.setText(readUserDetails.doB);
+                    edtPhone.setText(readUserDetails.phone);
 
                     Uri uri = firebaseUser.getPhotoUrl();
                     Picasso.get().load(uri).into(imvAvatar);
