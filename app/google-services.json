@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "438771199121",
+    "firebase_url": "https://nerd-app-7a1e1-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "nerd-app-7a1e1",
+    "storage_bucket": "nerd-app-7a1e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438771199121:android:28735df0e16aebbff5a330",
+        "android_client_info": {
+          "package_name": "com.example.nerd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438771199121-pnh233gp12234v573ma9dkf47r3tao72.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhckyCk90AW5Blk9kaGyz5-S-phEFgXbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438771199121-pnh233gp12234v573ma9dkf47r3tao72.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

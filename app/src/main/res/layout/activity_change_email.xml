@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChangeEmail">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/forgot_container"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_update_email_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Cập nhật Email"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView_update_email_instruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="Bạn có thể cập nhật Email sau khi đã uỷ quyền bằng cách nhập mật khẩu."
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:padding="15dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/RL_curr_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewEmail"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/email" />
+
+                    <TextView
+                        android:id="@+id/txtCurrentEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toEndOf="@id/imageViewEmail"
+                        android:padding="6dp"
+                        android:text="Current Email" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/RL_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/RL_curr_email"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_update_email_verify_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:text="Password*" />
+
+                    <EditText
+                        android:id="@+id/edtEmailPwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:hint="Email"
+                        android:background="@drawable/roundglass"
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_Auth"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/RL_pwd"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/forgot_container"
+                    android:text="Xác nhận"
+                    android:textColor="@color/white" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="10dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/RL_email"
+                android:layout_margin="15dp"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/txt_update_email_authenticated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Bạn chưa được uỷ quyền"
+                    android:textAlignment="center"
+                    android:textColor="#555555"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:id="@+id/RL_new_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_update_email_authenticated"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:id="@+id/txt_update_email_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:text="Email mới*" />
+
+                    <EditText
+                        android:id="@+id/edt_update_email_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_update_email_new"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/roundglass"
+                        android:hint="enter your new email address"
+                        android:inputType="textEmailAddress"
+                        android:padding="10dp"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_update_email"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/RL_new_email"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/forgot_container"
+                    android:text="Update Email"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

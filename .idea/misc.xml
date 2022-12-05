@@ -3,23 +3,46 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/android1/DoAnCK/app/src/main/res/drawable-v24/ic_baseline_shop_two_24.xml" value="0.166" />
-        <entry key="..\:/android1/DoAnCK/app/src/main/res/drawable/edittext_button_style_rounded.xml" value="0.202" />
-        <entry key="..\:/android1/DoAnCK/app/src/main/res/drawable/ellipse.xml" value="0.166" />
-        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_blog.xml" value="0.25" />
-        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_chitietblog.xml" value="0.25" />
-        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_courses.xml" value="0.25" />
-        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_homepage.xml" value="0.4" />
-        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_item_list.xml" value="0.1" />
-        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_khoahocchitiet.xml" value="0.25" />
-        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_lichhoc.xml" value="0.25" />
-        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_loading_screen.xml" value="0.2" />
-        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_news.xml" value="0.25" />
-        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_register.xml" value="0.25" />
-        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_user_page.xml" value="0.25" />
-        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/item_list.xml" value="0.24895833333333334" />
-        <entry key="..\:/android1/DoAnCK/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/drawable-v24/gradientglass.xml" value="0.146" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/drawable-v24/rdbg.xml" value="0.146" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/drawable-v24/rdbutton.xml" value="0.15" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/drawable-v24/roundglass.xml" value="0.15" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/drawable/button_color.xml" value="0.15" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/drawable/forgot_container.xml" value="0.1545" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/drawable/thongtin_ca_nhan_icon.xml" value="0.146" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/drawable/user_page_rec.xml" value="0.146" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_change_email.xml" value="0.264" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_change_language.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_change_password.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_details_gv.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_dieukhoan.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_forgot_pass.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_giao_vien.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_homepage.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_khaosat.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_khoahocchitiet.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_lichhoc.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_lienhe.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_loading_screen.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_log_out_dialog.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_main.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_notification.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_phanhoi.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_quydinhlophoc.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_setting.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_upload_avatar.xml" value="0.246875" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_user_info.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_user_page.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_ykienkhac.xml" value="0.264" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/dialog_confirm_change.xml" value="0.259375" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/fragment_first.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/item_notification.xml" value="0.259375" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/item_teacher.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/logout_dialog.xml" value="0.1953125" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2604166666666667" />
+        <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_homepage.xml" value="0.25" />
         <entry key="..\:/android1/Nerd4/app/src/main/res/drawable/blurbg.xml" value="0.1995" />
         <entry key="..\:/android1/Nerd4/app/src/main/res/layout/activity_courses.xml" value="0.24635416666666668" />
         <entry key="..\:/android1/Nerd4/app/src/main/res/layout/activity_forgot_pass.xml" value="0.24635416666666668" />
