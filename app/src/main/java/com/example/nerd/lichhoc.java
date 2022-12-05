@@ -65,11 +65,11 @@ public class lichhoc extends AppCompatActivity {
 
     private void loadDataLopHocSapDienRa() {
         lopHocSapDienRas = new ArrayList<>();
-        lopHocSapDienRas.add(new Lophocsapdienra("Topic: Animal", "9:00", "6/1/2022", "Thầy Trần Tùng", "11/16 người" ));
-        lopHocSapDienRas.add(new Lophocsapdienra("Study 1:1: How to introduce my hometown", "12:00", "15/1/2022", "Cô Tường Thanh", "1/1 người" ));
-        lopHocSapDienRas.add(new Lophocsapdienra("Topic: Travel", "16:00", "16/1/2022", "Thầy Trần Tùng", "05/16 người" ));
-        lopHocSapDienRas.add(new Lophocsapdienra("Study 1:1: School", "16:00", "22/1/2022", "Ms Hoa TOEIC", "1/1 người"));
-        lopHocSapDienRas.add(new Lophocsapdienra("Study 1:1: Technology", "12:00", "26/1/2022", "Ms Hoa TOEIC", "1/1 người" ));
+        lopHocSapDienRas.add(new Lophocsapdienra("Topic: Animal", "9:00", "26/12/2022", "Thầy Trần Tùng", "11/16 người" ));
+        lopHocSapDienRas.add(new Lophocsapdienra("Study 1:1: How to introduce my hometown", "12:00", "15/12/2022", "Cô Tường Thanh", "1/1 người" ));
+        lopHocSapDienRas.add(new Lophocsapdienra("Topic: Travel", "16:00", "26/1/2023", "Thầy Trần Tùng", "05/16 người" ));
+        lopHocSapDienRas.add(new Lophocsapdienra("Study 1:1: School", "16:00", "22/12/2022", "Ms Hoa TOEIC", "1/1 người"));
+        lopHocSapDienRas.add(new Lophocsapdienra("Study 1:1: Technology", "12:00", "25/12/2022", "Ms Hoa TOEIC", "1/1 người" ));
         itemLopHocSapDienRaAdapter = new ItemLopHocSapDienRaAdapter(this, lopHocSapDienRas);
         lvHienThiLopHoc.setAdapter(itemLopHocSapDienRaAdapter);
         lvHienThiLopHoc.setOnItemClickListener(new AdapterView.OnItemClickListener() {

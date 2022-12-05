@@ -22,7 +22,6 @@ public class LichSuLopHojc extends AppCompatActivity {
         setContentView(R.layout.activity_lich_su_lop_hojc);
 
         btnFeedback = findViewById(R.id.btnFeedback);
-
         imbBack = findViewById(R.id.imbBack);
 
 
