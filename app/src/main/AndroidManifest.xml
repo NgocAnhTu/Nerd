@@ -14,6 +14,27 @@
         android:theme="@style/Theme.Nerd"
         tools:targetApi="31">
         <activity
+            android:name=".Detailed_Proofread"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Detailed_Assignments"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Assignments_Nerd"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ThiTiengAnh"
             android:exported="false">
             <meta-data

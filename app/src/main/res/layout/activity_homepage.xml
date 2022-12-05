@@ -148,7 +148,7 @@
                     android:layout_height="20dp"
                     android:src="@drawable/baitap"/>
                 <TextView
-                    android:id="@+id/b_i_t_p"
+                    android:id="@+id/txt_baitap"
                     android:layout_width="100dp"
                     android:layout_height="20dp"
                     android:text="Bài tập"
@@ -160,7 +160,7 @@
                     android:layout_height="20dp"
                     android:src="@drawable/dangkythi"/>
                 <TextView
-                    android:id="@+id/ng_k_thi"
+                    android:id="@+id/txt_dangkithi"
                     android:layout_width="100dp"
                     android:layout_height="20dp"
                     android:text="Đăng ký thi"

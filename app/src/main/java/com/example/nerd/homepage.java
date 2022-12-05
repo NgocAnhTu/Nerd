@@ -18,7 +18,9 @@ import com.example.utils.General;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class homepage extends AppCompatActivity {
-    TextView txtName;
+
+
+    TextView txtName, txtGhiChu, txtBaiTap, txtDangKyThi;
     String username = General.Us.getUsername();
     ImageView imvavatar;
     ImageButton imbCourse1, imbBlog1, imbBlog2, imbBlog3 ;
@@ -42,6 +44,9 @@ public class homepage extends AppCompatActivity {
         imbBlog2 = findViewById(R.id.imb_Blog2);
         imbBlog3 = findViewById(R.id.imb_Blog3);
         btnAllBlog = findViewById(R.id.btn_allBlog);
+        txtGhiChu = findViewById(R.id.txt_ghichu);
+        txtBaiTap = findViewById(R.id.txt_baitap);
+        txtDangKyThi = findViewById(R.id.txt_dangkithi);
     }
 
 
@@ -88,6 +93,30 @@ public class homepage extends AppCompatActivity {
 
     }
     private void changePage() {
+
+        txtGhiChu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(homepage.this, Ghichu.class);
+                startActivity(intent);
+            }
+        });
+
+        txtBaiTap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(homepage.this, Assignments_Nerd.class);
+                startActivity(intent);
+            }
+        });
+
+        txtDangKyThi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(homepage.this, dangkythi.class);
+                startActivity(intent);
+            }
+        });
 
         imbCourse1.setOnClickListener(new View.OnClickListener() {
             @Override
