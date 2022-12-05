@@ -7,15 +7,20 @@
     tools:context=".Register"
     android:orientation="vertical"
     android:background="@drawable/blurbg"
-    android:padding="20dp"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="5dp"
     android:clipToPadding="false">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rdbg"
         android:orientation="vertical"
-        android:padding="20dp"
+        android:padding="10dp"
         android:clipToPadding="false"
         android:layout_marginTop="30dp">
         <LinearLayout
@@ -47,22 +52,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nhập Email"
-            android:textSize="25dp"
+            android:textSize="18dp"
             android:textColorHint="#42C2FF"
-            android:backgroundTint="#42C2FF"/>
+            android:backgroundTint="#42C2FF"
+            android:background="@drawable/roundglass"/>
 
         <EditText
+            android:id="@+id/edt_phone"
             android:padding="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:id="@+id/edt_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nhập số điện thoại"
-            android:textSize="25dp"
+            android:textSize="18dp"
             android:textColorHint="#42C2FF"
-            android:backgroundTint="#42C2FF"/>
+            android:backgroundTint="#42C2FF"
+            android:background="@drawable/roundglass"/>
         <EditText
             android:padding="10dp"
             android:layout_marginTop="10dp"
@@ -72,41 +79,60 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Tên tài khoản"
-            android:textSize="25dp"
+            android:textSize="18dp"
             android:textColorHint="#42C2FF"
-            android:backgroundTint="#42C2FF" />
+            android:backgroundTint="#42C2FF"
+            android:background="@drawable/roundglass"/>
 
         <EditText
             android:padding="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
+            android:inputType="textPassword"
             android:id="@+id/edt_Password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:textSize="25dp"
+            android:textSize="18dp"
             android:textColorHint="#42C2FF"
-            android:backgroundTint="#42C2FF"/>
+            android:backgroundTint="#42C2FF"
+            android:background="@drawable/roundglass"/>
 
         <EditText
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
             android:id="@+id/edt_ReEnterPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="#42C2FF"
             android:hint="Nhập lại password"
-            android:textSize="25dp"
+            android:inputType="textPassword"
+            android:padding="10dp"
             android:textColorHint="#42C2FF"
-            android:backgroundTint="#42C2FF"/>
+            android:textSize="18dp"
+            android:background="@drawable/roundglass"/>
+
+        <EditText
+            android:id="@+id/edt_DOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/roundglass"
+            android:backgroundTint="#42C2FF"
+            android:hint="Ngày sinh"
+            android:padding="10dp"
+            android:textColorHint="#42C2FF"
+            android:textSize="18dp" />
 
         <CheckBox
             android:id="@+id/chk_Policy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:text="Tôi đồng ý tuân thủ theo Điều khoản của Nerd"
             android:textAlignment="center"
             android:backgroundTint="@color/black"
@@ -114,13 +140,12 @@
 
         <TableLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="150px"
             android:layout_gravity="center"
             android:clipChildren="false">
             <TableRow
                 android:clipToPadding="false">
                 <androidx.appcompat.widget.AppCompatButton
-                    android:layout_marginTop="30dp"
                     android:layout_marginEnd="15dp"
                     android:padding="15dp"
                     android:id="@+id/btn_GG"
@@ -132,7 +157,6 @@
                     android:background="@drawable/gradientglass"/>
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:layout_marginTop="30dp"
                     android:layout_marginStart="15dp"
                     android:padding="15dp"
                     android:id="@+id/btn_FB"
@@ -144,21 +168,12 @@
                     android:background="@drawable/gradientglass"/>
             </TableRow>
 
-            <TextView
-                android:id="@+id/txt_Login"
-                android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Đăng nhập"
-                android:textAlignment="center"
-                android:textColor="#42C2FF" />
-
         </TableLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_marginTop="10dp"
+            android:id="@+id/btn_Dangky"
+            android:layout_marginBottom="50dp"
             android:padding="15dp"
-            android:id="@+id/btn_Register"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="Đăng ký"
@@ -167,5 +182,7 @@
             android:layout_gravity="center"/>
 
     </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

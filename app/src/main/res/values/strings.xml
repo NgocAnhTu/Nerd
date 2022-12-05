@@ -1,5 +1,49 @@
 <resources>
-    <string name="app_name">DoAnCK</string>
+    <string name="app_name">Nerd</string>
     <string name="ketqua"> <u>70 kết quả</u> </string>
     <string name="thanh_tich">1. Tốt nghiệp đại học Văn Lang bằng cử nhân khoa Khoa học - Xã hội \n2. Đạt bằng IELTS 8.0 \n3. Quán quân chương trình IELTS Face-off 2005</string>
+    <string name="dieu1">
+        <p>1. Học viên cần tham gia tích cực, hăng hái phát biểu trong lớp và làm bài tập đầy đủ trước khi đến lớp.</p>
+    </string>
+    <string name="dieu2">
+        <p>2. Đi học đầy đủ, đúng giờ. Học viên đến 30 phút được tính là nghỉ học. Học viên nghỉ quá 20% số buổi sẽ không được cấp chứng chỉ cuối khoá</p>
+    </string>
+    <string name="dieu3">
+        <p>3. Đi học đầy đủ, đúng giờ. Học viên đến muộn 30 phút được tính là nghỉ học. Học viên nghỉ quá 20% số buổi sẽ không được cấp chứng chỉ cuối khoá</p>
+    </string>
+    <string name="dieu4">
+        <p>4.  Không làm mất trật tự, hạn chế làm việc riêng trong giờ học. Học viên nào có vi phạm làm ảnh hưởng đến việc học tập của người khác thì giáo viên có quyền yêu cầu học viên không tham gia buổi học nữa. Nếu các lần tiêp theo vẫn có hành vi như vậy, trung tâm có quyền yêu cầu học viên dừng học mà không cần hoàn trả lại học phí.</p>
+    </string>
+    <string name="dieu5">
+        <p>5. Tắt điện thoại hoặc để chế độ rung trong lớp. Có thể xin ra ngoài để nghe điện thoại.</p>
+    </string>
+    <string name="dieu6">
+        <p>6. Điều hòa sẽ được giáo viên sử dụng theo đúng nội quy của trung tâm. Học viên không được dùng điều khiển điều hòa. Nếu cần dùng, hãy hỏi nhân viên trung tâm.</p>
+    </string>
+    <string name="dieu7">
+        <p>7. Không hút thuốc trong phòng học, tuân thủ các quy định về an toàn cháy nổ cũng như tiết kiệm điện khi không cần thiết.</p>
+    </string>
+    <string name="dieu8">
+        <p>8. Giữ gìn vệ sinh chung của lớp và trung tâm.</p>
+    </string>
+    <string name="dieu9">
+        <p>9. Trong trường hợp học viên tham gia hơn 1/3 khoá học mà muốn bao lưu do có lý do chính đáng (phải đi công tác đột xuất hoặc do ốm phải đi viện...) học viên phải làm đơn xin bảo lưu gửi tới trung tâm và đơn bảo lưu phải được sự chấp nhận của giám đốc trung tâm. Thời hạn bảo lưu là 2 tháng kể từ ngày được chấp nhận bảo lưu. Lệ phí bảo lưu là 20% tổng học phí của khoá học.</p>
+    </string>
+    <string name="dieu10">
+        <p>10. Oxford English UK Vietnam không có chính sách hoàn lại học phí trong mọi trường hợp. Mọi thắc mắc xin liên hệ để có thêm thông tin. Các quy định trên áp dụng cho tất cả các khoá học tại trung tâm. Vì vậy, khi học viên đã đăng ký khoá học thì trung tâm sẽ mặc định là học viên đã tìm hiểu, cân nhắc đầy đủ và đồng ý tuân thủ các quy định trên.</p>
+    </string>
+    <string name="dieukhoan">
+        <p>Học viên không được gây phiền phức hay có hành vi gây cản trở hoặc bất kỳ thiệt hại đến hình ảnh, danh dự và tài sản của trung tâm và nhân viên của ISE hoặc của bên thứ ba bất kỳ trong khuôn viên của các Trung tâm ISE. Học viên đồng ý tuân thủ nghiêm chỉnh Quy định của ISE tại Trung tâm mà Học viên đang theo học. ISE có quyền huỷ bỏ Hợp đồng bất cứ lúc nào và giữ lại toàn bộ các khoản học phí của khoá học mà Học viên đã đóng cho ISE và ISE có quyền ngừng cung cấp khoá học cho Học viên nếu Học viên vi phạm bất kỳ điều khoản nào trong Hợp đồng này. Học viên đồng ý không khiếu kiện gì về trách nhiệm dân sự đối với ISE và viên chức, nhân viên hay đại diện của Công ty. Hợp đồng sẽ được điều chỉnh và giải thích theo luật Việt Nam. Hợp đồng được lập bằng tiếng Việt và tiếng Anh. Nếu có sự khác biệt giữa 2 ngôn ngữ trong bất kỳ điều khoản nào của Hợp đồng, các bên đồng ý rằng điều khoản bằng tiếng Việt sẽ được ưu tiên sử dụng. Cả hai bên đã đọc và hiểu rõ nội dung, nhận thấy nội dung thể hiện đúng theo sự thoả thuận và quyết định ký hợp đồng vào ngày tháng năm ghi ở phần trên. Hợp đồng này có hiệu lực từ ngày ký bởi hai bên. Hợp đồng này được lập thành hai (02) bản có giá trị pháp lý như nhau, mỗi bên giữ một (01) bản. </p>
+    </string>
+    <string name="title_activity_change_email">ChangeEmail</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="chooselanguage">CHỌN NGÔN NGỮ</string>
+    <string name="vnmese">Tiếng Việt</string>
+    <string name="eng">Tiếng Anh</string>
 </resources>

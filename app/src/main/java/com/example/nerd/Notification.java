@@ -6,8 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ListView;
-
-import com.example.gvAdapter.ItemNotificationAdapter;
+import com.example.adapters.ItemNotificationAdapter;
 
 import java.util.ArrayList;
 

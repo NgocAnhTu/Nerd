@@ -14,13 +14,6 @@
         android:theme="@style/Theme.Nerd"
         tools:targetApi="31">
         <activity
-            android:name=".DetailsGV"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".Notification"
             android:exported="false">
             <meta-data
@@ -34,6 +27,50 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name=".GiaoVien"
+            android:name=".DetailsGV"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ChangeLanguage"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeEmail"
+            android:exported="false" />
+        <activity
+            android:name=".UploadAvatar"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".Khaosat"
+            android:exported="false" />
+        <activity
+            android:name=".Ykienkhac"
+            android:exported="false" />
+        <activity
+            android:name=".Phanhoi"
+            android:exported="false" />
+        <activity
+            android:name=".Lienhe"
+            android:exported="false" />
+        <activity
+            android:name=".Dieukhoan"
+            android:exported="false" />
+        <activity
+            android:name=".Quydinhlophoc"
+            android:exported="false" />
+        <activity
+            android:name=".UserInfo"
+            android:exported="false" />
+        <activity
+            android:name=".Setting"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
@@ -57,6 +94,15 @@
             android:exported="false" />
         <activity
             android:name=".Courses"
+            android:exported="false" />
+        <activity
+            android:name=".item_list"
+            android:exported="false" />
+        <activity
+            android:name=".news"
+            android:exported="false" />
+        <activity
+            android:name=".Blog"
             android:exported="false" />
         <activity
             android:name=".Login"

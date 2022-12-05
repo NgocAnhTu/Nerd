@@ -1,47 +1,59 @@
 package com.example.nerd;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
+import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.database.DatabaseHelper;
-import com.example.model.Users;
-import com.example.utils.General;
-
-import java.io.ByteArrayOutputStream;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 
 public class Login extends AppCompatActivity {
-
-    Button btnLogin, btnRegister;
-    EditText edtUsername, edtPassword;
+    Button btnLogin, btnReg;
+    EditText edtEmail, edtPassword;
+    CheckBox ckboxShowHide;
     TextView txtForgotPass;
-
+    FirebaseAuth authProfile;
+    private static final String TAG = "Login";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        General.ADB = new DatabaseHelper(this);
-        General.Us = new Users();
-        prepareDb();
         linkViews();
         getEvents();
-        getData();
 
+        ckboxShowHide.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(ckboxShowHide.isChecked()) {
+                    edtPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                }else {
+                    edtPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                }
+            }
+        });
     }
 
 
     private void getEvents() {
-        DatabaseHelper accountDataBase = new DatabaseHelper(this);
-        btnRegister.setOnClickListener(new View.OnClickListener() {
+        btnReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intentDangKy = new Intent(Login.this,Register.class);
@@ -51,93 +63,74 @@ public class Login extends AppCompatActivity {
 
         txtForgotPass.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent quen = new Intent(Login.this, ForgotPass.class);
-                startActivity(quen);
+            public void onClick(View view) {
+                Intent intent = new Intent(Login.this, ForgotPass.class);
+                startActivity(intent);
             }
         });
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
-                //Lấy dữ liệu
-                String userName = edtUsername.getText().toString();
+                String email = edtEmail.getText().toString();
                 String password = edtPassword.getText().toString();
 
-                //Check dữ liệu
-                boolean CheckUserPass = General.ADB.checkUsernamePassword(userName, password);
-                boolean CheckEmailPass = General.ADB.checkEmailPassword(userName, password);
-                boolean CheckPhonePass = General.ADB.checkPhonePassword(userName, password);
-                if (CheckUserPass) {
-                    Toast.makeText(Login.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-
-                    General.Us.setUsername(userName);
-                    Intent truyenUserPage = new Intent(Login.this, homepage.class);
-                    truyenUserPage.putExtra("UsernameFromDangNhap", userName);
-                    startActivity(truyenUserPage);
-                }else{
-                    if (CheckEmailPass) {
-                        Toast.makeText(Login.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-
-                        String email = General.ADB.ChangeEmailtoUsername(userName);
-                        General.Us.setUsername(email);
-
-                        Intent truyenUserPage = new Intent(Login.this, homepage.class);
-                        startActivity(truyenUserPage);
-                    }else{
-                        if (CheckPhonePass) {
-                            Toast.makeText(Login.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-
-                            String phone = General.ADB.ChangePhonetoUsername(userName);
-                            General.Us.setUsername(phone);
-                            Intent truyenUserPage = new Intent(Login.this, homepage.class);
-                            startActivity(truyenUserPage);
-
-                        } else {
-                            Toast.makeText(Login.this, "Sai tài khoản hoặc mật khẩu", Toast.LENGTH_SHORT).show();
-                        }
-                    }}}
-        });
-        txtForgotPass.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Login.this,ForgotPass.class);
-                startActivity(intent);
+                if(TextUtils.isEmpty(email)) {
+                    Toast.makeText(Login.this, "Vui lòng nhập email", Toast.LENGTH_SHORT).show();
+                    edtEmail.setError("Yêu cầu nhập email");
+                    edtEmail.requestFocus();
+                }else if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                    edtEmail.setError("Vui lòng nhập Email hợp lệ");
+                    edtEmail.requestFocus();
+                }else if(TextUtils.isEmpty(password)) {
+                    edtPassword.setError("Vui lòng nhập mật khẩu");
+                    edtPassword.requestFocus();
+                }else {
+                    loginUSer(email, password);
+                }
             }
         });
     }
 
-    private byte[] convertPhoto(int image) {
-        BitmapDrawable drawable = (BitmapDrawable) getDrawable(image);
-        Bitmap bitmap = drawable.getBitmap();
-        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
-        return outputStream.toByteArray();
+    private void loginUSer(String email, String password) {
+        authProfile.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful()){
+                    Toast.makeText(Login.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(Login.this, homepage.class));
+                    finish();
+                } else  {
+                    try {
+                        throw task.getException();
+                    }catch (FirebaseAuthInvalidUserException e) {
+                        edtEmail.setError("Tài khoản không tồn tại");
+                        edtEmail.requestFocus();
+                    }catch (Exception e){
+                        Log.e(TAG, e.getMessage());
+                        Toast.makeText(Login.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+        });
     }
 
-    private void prepareDb() {
-        if(General.ADB.getCount() == 0) {
-            General.ADB.insertData("admin", "admin", "admin", "0123456789", "admin@gmail.com", "20042002", convertPhoto(R.drawable.unknownava));
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(authProfile.getCurrentUser() != null) {
+            startActivity(new Intent(Login.this, homepage.class));
+            finish();
         }
     }
 
-
-
-
-    private void getData() {
-        Intent intentGetData = getIntent();
-        edtUsername.setText(intentGetData.getStringExtra("Name_To_Login"));
-
-    }
-
-
     private void linkViews() {
         btnLogin = findViewById(R.id.btn_Login);
-        btnRegister = findViewById(R.id.btn_Register);
+        btnReg = findViewById(R.id.btn_Dangky);
         edtPassword = findViewById(R.id.edt_Password);
-        edtUsername = findViewById(R.id.edt_Username);
+        edtEmail = findViewById(R.id.edt_Email);
         txtForgotPass = findViewById(R.id.txt_ForgotPass);
+        ckboxShowHide = findViewById(R.id.ckbox_show_hide_password);
+        authProfile = FirebaseAuth.getInstance();
     }
 }
