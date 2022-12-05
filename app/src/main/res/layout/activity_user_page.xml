@@ -88,7 +88,7 @@
                     android:layout_marginRight="20dp"
                     android:background="@color/white"
                     android:gravity="right"
-                    android:text="ngocanhkute@gmail.com"
+                    android:text="20/11/2002"
                     android:textColor="#00BCD4"
                     android:textSize="18dp" />
             </LinearLayout>

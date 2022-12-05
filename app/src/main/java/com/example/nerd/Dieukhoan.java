@@ -8,17 +8,11 @@ import android.widget.ImageView;
 
 public class Dieukhoan extends AppCompatActivity {
 
-    ImageView imvBack = findViewById(R.id.imv_back);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dieukhoan);
-
-        setEvent();
-    }
-
-    private void setEvent() {
+        ImageView imvBack = findViewById(R.id.imv_back);
         imvBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

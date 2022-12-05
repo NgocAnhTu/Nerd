@@ -22,13 +22,13 @@ public class Phanhoi extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phanhoi);
 
+        linkViews();
         setEvent();
         bottomNav();
-        linkViews();
     }
 
     private void linkViews() {
-        imvBack = findViewById(R.id.imv_back);
+        imvBack = findViewById(R.id.imv_backPh);
         btnKhaosat = findViewById(R.id.btn_Khaosat);
         btnYkienkhac = findViewById(R.id.btn_Ykienkhac);
     }
