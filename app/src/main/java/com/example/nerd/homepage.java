@@ -29,7 +29,7 @@ public class homepage extends AppCompatActivity {
         setContentView(R.layout.activity_homepage);
         linkViews();
         showInfo();
-        bottomNav();
+//        bottomNav();
         changePage();
 
     }
@@ -57,46 +57,46 @@ public class homepage extends AppCompatActivity {
     }
 
 
-    private void bottomNav() {
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.Homepage);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
-                    case R.id.courses:
-                        Intent courses = new Intent(homepage.this, Courses.class);
-                        startActivity(courses);
-                        return true;
-
-                    case R.id.Homepage:
-                        return true;
-
-                    case R.id.user:
-                        Intent user = new Intent(homepage.this, UserPage.class);
-                        startActivity(user);
-                        return true;
-                    case R.id.calendar:
-                        Intent calendar = new Intent(homepage.this, lichhoc.class);
-                        startActivity(calendar);
-                        return true;
-                }
-
-                return false;
-            }
-        });
-
-    }
+//    private void bottomNav() {
+//        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+//        bottomNavigationView.setSelectedItemId(R.id.Homepage);
+//
+//        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//                switch (item.getItemId()){
+//                    case R.id.courses:
+//                        Intent courses = new Intent(homepage.this, Courses.class);
+//                        startActivity(courses);
+//                        return true;
+//
+//                    case R.id.Homepage:
+//                        return true;
+//
+//                    case R.id.user:
+//                        Intent user = new Intent(homepage.this, UserPage.class);
+//                        startActivity(user);
+//                        return true;
+//                    case R.id.calendar:
+//                        Intent calendar = new Intent(homepage.this, lichhoc.class);
+//                        startActivity(calendar);
+//                        return true;
+//                }
+//
+//                return false;
+//            }
+//        });
+//
+//    }
     private void changePage() {
 
-        imbCourse1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent course1 = new Intent(homepage.this, khoahocchitiet.class);
-                startActivity(course1);
-            }
-        });
+//        imbCourse1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent course1 = new Intent(homepage.this, khoahocchitiet.class);
+//                startActivity(course1);
+//            }
+//        });
 
         btnSee.setOnClickListener(new View.OnClickListener() {
             @Override
