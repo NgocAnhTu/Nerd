@@ -32,7 +32,7 @@ public class homepage extends AppCompatActivity {
     String name;
     ImageView imvavatar,imbBlog1, imbBlog2, imbBlog3;
     ImageButton imbCourse1;
-    Button btnAllBlog;
+    Button btnSee;
     FirebaseAuth authProfile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,7 +79,7 @@ public class homepage extends AppCompatActivity {
         imbBlog1 = findViewById(R.id.imb_Blog1);
         imbBlog2 = findViewById(R.id.imb_Blog2);
         imbBlog3 = findViewById(R.id.imb_Blog3);
-        btnAllBlog = findViewById(R.id.btn_allBlog);
+        btnSee = findViewById(R.id.btn_See);
 
     }
 
@@ -139,7 +139,7 @@ public class homepage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        btnAllBlog.setOnClickListener(new View.OnClickListener() {
+        btnSee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent all = new Intent(homepage.this, news.class);
