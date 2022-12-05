@@ -14,34 +14,55 @@
         android:theme="@style/Theme.Nerd"
         tools:targetApi="31">
         <activity
-            android:name="com.example.nerd.MainActivity"
+            android:name=".DetailsGV"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Notification"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".GiaoVien"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.nerd.homepage"
+            android:name=".homepage"
             android:exported="false" />
         <activity
-            android:name="com.example.nerd.ForgotPass"
+            android:name=".ForgotPass"
             android:exported="false" />
         <activity
-            android:name="com.example.nerd.Register"
+            android:name=".Register"
             android:exported="false" />
         <activity
-            android:name="com.example.nerd.khoahocchitiet"
+            android:name=".khoahocchitiet"
             android:exported="false" />
         <activity
-            android:name="com.example.nerd.lichhoc"
+            android:name=".lichhoc"
             android:exported="false" />
         <activity
-            android:name="com.example.nerd.UserPage"
+            android:name=".UserPage"
             android:exported="false" />
         <activity
-            android:name="com.example.nerd.Courses"
+            android:name=".Courses"
             android:exported="false" />
         <activity
-            android:name="com.example.nerd.Login"
+            android:name=".Login"
             android:exported="false" />
         <activity
-            android:name="com.example.nerd.LoadingScreen"
+            android:name=".LoadingScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

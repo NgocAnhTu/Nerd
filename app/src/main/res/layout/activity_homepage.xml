@@ -69,10 +69,11 @@
                         android:textSize="20dp"
                         android:gravity="top" />
                 </LinearLayout>
-                <ImageView
+                <ImageButton
+                    android:id="@+id/ib_Noti"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/bell"
+                    android:background="@drawable/bell"
                     android:layout_marginLeft="60dp"
                     android:layout_gravity="center"/>
             </LinearLayout>
@@ -246,14 +247,17 @@
                     android:weightSum="3">
 
                     <ImageButton
-                        android:scaleType="centerCrop"
+                        android:id="@+id/imb_gv1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/nerd9"
+                        android:layout_marginRight="10dp"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
-                        android:layout_marginRight="10dp"/>
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/nerd9" />
+
                     <ImageButton
+                        android:id="@+id/imb_gv2"
                         android:scaleType="centerCrop"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -262,6 +266,7 @@
                         android:background="#FFFFFF"
                         android:layout_marginRight="10dp"/>
                     <ImageButton
+                        android:id="@+id/imb_gv3"
                         android:scaleType="centerCrop"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -269,6 +274,13 @@
                         android:layout_weight="1"
                         android:background="#FFFFFF" />
                 </LinearLayout>
+                <Button
+                    android:id="@+id/btn_See"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="xem tất cả giáo viên"
+                    android:backgroundTint="#1B4965"/>
             </LinearLayout>
 
             <LinearLayout

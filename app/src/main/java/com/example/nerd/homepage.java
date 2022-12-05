@@ -9,6 +9,7 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -20,7 +21,8 @@ public class homepage extends AppCompatActivity {
     TextView txtName;
     String username = General.Us.getUsername();
     ImageView imvavatar;
-    ImageButton imbCourse1;
+    ImageButton imbCourse1, ibNoti, imbGV1, imbGV2, imbGV3;
+    Button btnSee;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +38,11 @@ public class homepage extends AppCompatActivity {
         txtName = findViewById(R.id.txt_Name);
         imbCourse1 = findViewById(R.id.imbCourse1);
         imvavatar = findViewById(R.id.imv_avatar);
+        btnSee = findViewById(R.id.btn_See);
+        ibNoti = findViewById(R.id.ib_Noti);
+        imbGV1 = findViewById(R.id.imb_gv1);
+        imbGV2 = findViewById(R.id.imb_gv2);
+        imbGV3 = findViewById(R.id.imb_gv3);
     }
 
 
@@ -88,6 +95,42 @@ public class homepage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent course1 = new Intent(homepage.this, khoahocchitiet.class);
                 startActivity(course1);
+            }
+        });
+
+        btnSee.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent see = new Intent(homepage.this, GiaoVien.class);
+                startActivity(see);
+            }
+        });
+        ibNoti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent noti = new Intent(homepage.this, Notification.class);
+                startActivity(noti);
+            }
+        });
+        imbGV1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent gv1 = new Intent(homepage.this, DetailsGV.class);
+                startActivity(gv1);
+            }
+        });
+        imbGV2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent gv2 = new Intent(homepage.this, DetailsGV.class);
+                startActivity(gv2);
+            }
+        });
+        imbGV3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent gv3 = new Intent(homepage.this, DetailsGV.class);
+                startActivity(gv3);
             }
         });
     }
