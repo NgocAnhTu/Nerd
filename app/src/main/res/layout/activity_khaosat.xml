@@ -280,6 +280,669 @@
 
                     </TableLayout>
 
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="2.2 Giáo viên có cách giảng dạy với phù hợp với các đối tượng học viên khác nhau"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_2_2_a"
+                                android:text="Rất hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_2_2_b"
+                                android:text="Hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_2_2_c"
+                                android:text="Không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_2_2_d"
+                                android:text="Rất không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                    </TableLayout>
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="2.3 Giáo viên sử dụng nhiều hình thức trò chơi thú vị"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_2_3_a"
+                                android:text="Rất hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_2_3_b"
+                                android:text="Hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_2_3_c"
+                                android:text="Không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_2_3_d"
+                                android:text="Rất không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                    </TableLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:text="ĐÁNH GIÁ NỘI DUNG GIẢNG DẠY"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="1. Giáo viên có sự liên hệ giữa lý thuyết và thực tiễn trong giảng dạy
+ "
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_1_a"
+                                android:text="Rất hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_1_b"
+                                android:text="Hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_1_c"
+                                android:text="Không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_1_d"
+                                android:text="Rất không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                    </TableLayout>
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="2. Giáo viên cập nhật liên tục các nội dung và thông tin mới liên quan đến bài học
+
+ "
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_2_1_1_a"
+                                android:text="Rất hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_2_1_1_b"
+                                android:text="Hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_2_1_1_c"
+                                android:text="Không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_2_1_1_d"
+                                android:text="Rất không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                    </TableLayout>
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="3. Nội dung giảng dạy vừa sức đối với học viên
+
+ "
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_3_1_1_a"
+                                android:text="Rất hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_3_1_1_b"
+                                android:text="Hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_3_1_1_c"
+                                android:text="Không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_3_1_1_d"
+                                android:text="Rất không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                    </TableLayout>
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="4. Nội dung giảng dạy thiết thực, hữu ích
+
+
+ "
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_4_1_1_a"
+                                android:text="Rất hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_4_1_1_b"
+                                android:text="Hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_4_1_1_c"
+                                android:text="Không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_4_1_1_d"
+                                android:text="Rất không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_gravity="center"
+                            android:text="ĐÁNH GIÁ DỊCH VỤ NERD"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="1. Nghiệp vụ tư vấn và chăm sóc học viên "
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+                    </TableLayout>
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="1.1 Bạn nắm rõ lộ trình học, quy định lớp học và cách học của Nerd qua tư vấn "
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_1_1_a"
+                                android:text="Rất hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_1_1_b"
+                                android:text="Hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_1_1_c"
+                                android:text="Không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_1_1_d"
+                                android:text="Rất không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                    </TableLayout>
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="1.2 Bạn biết cách sử dụng Nerd system "
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_2_1_a"
+                                android:text="Rất hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_2_1_b"
+                                android:text="Hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_2_1_c"
+                                android:text="Không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_2_1_d"
+                                android:text="Rất không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                    </TableLayout>
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="1.3 Bạn hiểu rõ về tiêu chí và quyền lợi cam kết đầu ra "
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_3_1_a"
+                                android:text="Rất hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_3_1_b"
+                                android:text="Hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_3_1_c"
+                                android:text="Không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_3_1_d"
+                                android:text="Rất không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                    </TableLayout>
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="1.4 Bạn đã được gửi thông báo về pre-course "
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_4_1_a"
+                                android:text="Rất hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_4_1_b"
+                                android:text="Hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10">
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_4_1_c"
+                                android:text="Không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_1_1_4_1_d"
+                                android:text="Rất không hài lòng"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5" />
+
+                        </TableRow>
+
+                    </TableLayout>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:text="GỬI"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
                 </LinearLayout>
 
             </LinearLayout>
