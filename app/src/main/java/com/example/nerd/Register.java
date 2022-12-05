@@ -78,23 +78,20 @@ public class Register extends AppCompatActivity {
                 String textPhone = edtPhone.getText().toString();
                 String textDOB = edtDOB.getText().toString();
 
-                if(TextUtils.isEmpty(textName)) {
-                    edtName.setError("Vui lòng nhập tên");
-                    edtName.requestFocus();
-                }else if(TextUtils.isEmpty(textEmail)) {
+                if(TextUtils.isEmpty(textEmail)) {
                     edtEmail.setError("Vui lòng nhập Email");
                     edtName.requestFocus();
                 }else if(!Patterns.EMAIL_ADDRESS.matcher(textEmail).matches()) {
                     edtEmail.setError("Vui lòng nhập Email hợp lệ");
-                    edtName.requestFocus();
-                }else if(TextUtils.isEmpty(textDOB)) {
-                    edtDOB.setError("Vui lòng nhập ngày sinh");
                     edtName.requestFocus();
                 }else if(TextUtils.isEmpty(textPhone)) {
                     edtPhone.setError("Vui lòng nhập số điện thoại");
                     edtName.requestFocus();
                 }else if(textPhone.length()!= 10) {
                     edtPhone.setError("Số điện thoại bao gồm 10 chữ số");
+                    edtName.requestFocus();
+                }else if(TextUtils.isEmpty(textName)) {
+                    edtName.setError("Vui lòng nhập tên");
                     edtName.requestFocus();
                 }else if(TextUtils.isEmpty(textPass)) {
                     edtPass.setError("Vui lòng nhập mật khẩu");
@@ -108,6 +105,9 @@ public class Register extends AppCompatActivity {
                     //xoá ô mật khẩu
                     edtRePass.clearComposingText();
                     edtPass.clearComposingText();
+                }else if(TextUtils.isEmpty(textDOB)) {
+                    edtDOB.setError("Vui lòng nhập ngày sinh");
+                    edtName.requestFocus();
                 }else {
                     registerUser(textName, textEmail, textPass, textDOB, textPhone);
                 }

@@ -14,8 +14,10 @@
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_change_email.xml" value="0.264" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_change_language.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_change_password.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_details_gv.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_dieukhoan.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_forgot_pass.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_giao_vien.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_homepage.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_khaosat.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_khoahocchitiet.xml" value="0.2604166666666667" />
@@ -25,6 +27,7 @@
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_log_out_dialog.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_main.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_notification.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_phanhoi.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_quydinhlophoc.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_register.xml" value="0.264" />
@@ -35,6 +38,8 @@
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/activity_ykienkhac.xml" value="0.264" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/dialog_confirm_change.xml" value="0.259375" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/fragment_first.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/item_notification.xml" value="0.259375" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/item_teacher.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/layout/logout_dialog.xml" value="0.1953125" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2604166666666667" />
         <entry key="..\:/android1/DoAnCK/app/src/main/res/layout/activity_homepage.xml" value="0.25" />

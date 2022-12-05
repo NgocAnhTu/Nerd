@@ -30,9 +30,9 @@ import com.squareup.picasso.Picasso;
 public class homepage extends AppCompatActivity {
     TextView txtName;
     String name;
-    ImageView imvavatar,imbBlog1, imbBlog2, imbBlog3;
-    ImageButton imbCourse1;
-    Button btnSee;
+    ImageView imvavatar,imbBlog1, ibNoti, imbBlog2, imbBlog3;
+    ImageButton imbCourse1, imbGV1, imbGV2, imbGV3;
+    Button btnSee ,btnSeeAllGV;
     FirebaseAuth authProfile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,7 +80,11 @@ public class homepage extends AppCompatActivity {
         imbBlog2 = findViewById(R.id.imb_Blog2);
         imbBlog3 = findViewById(R.id.imb_Blog3);
         btnSee = findViewById(R.id.btn_See);
-
+        btnSeeAllGV = findViewById(R.id.btn_SeeAllGV);
+        ibNoti = findViewById(R.id.ib_Noti);
+        imbGV1 = findViewById(R.id.imb_gv1);
+        imbGV2 = findViewById(R.id.imb_gv2);
+        imbGV3 = findViewById(R.id.imb_gv3);
     }
 
     private void bottomNav() {
@@ -109,7 +113,6 @@ public class homepage extends AppCompatActivity {
 
     }
     private void changePage() {
-
         imbCourse1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -125,6 +128,7 @@ public class homepage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         imbBlog2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -132,6 +136,7 @@ public class homepage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         imbBlog3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -139,11 +144,52 @@ public class homepage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         btnSee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent all = new Intent(homepage.this, news.class);
                 startActivity(all);
+            }
+        });
+
+        btnSeeAllGV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent see = new Intent(homepage.this, GiaoVien.class);
+                startActivity(see);
+            }
+        });
+
+        ibNoti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent noti = new Intent(homepage.this, Notification.class);
+                startActivity(noti);
+            }
+        });
+
+        imbGV1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent gv1 = new Intent(homepage.this, DetailsGV.class);
+                startActivity(gv1);
+            }
+        });
+
+        imbGV2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent gv2 = new Intent(homepage.this, DetailsGV.class);
+                startActivity(gv2);
+            }
+        });
+
+        imbGV3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent gv3 = new Intent(homepage.this, DetailsGV.class);
+                startActivity(gv3);
             }
         });
     }

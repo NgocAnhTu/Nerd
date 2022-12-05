@@ -70,6 +70,7 @@
                         android:gravity="top" />
                 </LinearLayout>
                 <ImageView
+                    android:id="@+id/ib_Noti"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/bell"
@@ -246,6 +247,7 @@
                     android:weightSum="3">
 
                     <ImageButton
+                        android:id="@+id/imb_gv1"
                         android:scaleType="centerCrop"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -254,6 +256,7 @@
                         android:background="#FFFFFF"
                         android:layout_marginRight="10dp"/>
                     <ImageButton
+                        android:id="@+id/imb_gv2"
                         android:scaleType="centerCrop"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -262,6 +265,7 @@
                         android:background="#FFFFFF"
                         android:layout_marginRight="10dp"/>
                     <ImageButton
+                        android:id="@+id/imb_gv3"
                         android:scaleType="centerCrop"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -269,6 +273,17 @@
                         android:layout_weight="1"
                         android:background="#FFFFFF" />
                 </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_SeeAllGV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#1B4965"
+                    android:text="Xem tất cả"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10dp" />
+
             </LinearLayout>
 
             <LinearLayout
