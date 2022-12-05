@@ -274,13 +274,14 @@
                         android:layout_weight="1"
                         android:background="#FFFFFF" />
                 </LinearLayout>
+
                 <Button
                     android:id="@+id/btn_See"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="xem tất cả giáo viên"
-                    android:backgroundTint="#1B4965"/>
+                    android:backgroundTint="#1B4965"
+                    android:text="xem tất cả giáo viên" />
             </LinearLayout>
 
             <LinearLayout
