@@ -176,14 +176,14 @@ public class homepage extends AppCompatActivity {
         imbGV2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent gv2 = new Intent(homepage.this, DetailsGV.class);
+                Intent gv2 = new Intent(homepage.this, DetailGV1.class);
                 startActivity(gv2);
             }
         });
         imbGV3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent gv3 = new Intent(homepage.this, DetailsGV.class);
+                Intent gv3 = new Intent(homepage.this, DetailGV2.class);
                 startActivity(gv3);
             }
         });

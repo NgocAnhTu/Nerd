@@ -11,8 +11,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Nerd"
+        android:theme="@style/Theme.Nerd.NoActionBar"
         tools:targetApi="31">
+        <activity
+            android:name=".DetailGV2"
+            android:exported="false" />
+        <activity
+            android:name=".DetailGV1"
+            android:exported="false" />
         <activity
             android:name=".Notification"
             android:exported="false">
@@ -28,7 +34,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".GiaoVien"
             android:name=".DetailsGV"
             android:exported="false">
             <meta-data
