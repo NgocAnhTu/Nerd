@@ -13,25 +13,36 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.Calendar;
 
-public class UserPage extends AppCompatActivity {
+public class Feedback1 extends AppCompatActivity {
 
-
-
+    Button btnKhaosat;
+    Button btnYkien;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_page);
+        setContentView(R.layout.activity_feedback1);
         bottomNav();
 
-        Button btnPhanhoi = findViewById(R.id.btn_Phanhoi);
-        btnPhanhoi.setOnClickListener(new View.OnClickListener() {
+        btnKhaosat = findViewById(R.id.btnKhaosat);
+        btnKhaosat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent feedback = new Intent(UserPage.this, Feedback1.class);
-                startActivity(feedback);
+                Intent ks = new Intent(Feedback1.this, Feedback.class);
+                startActivity(ks);
             }
         });
+
+        btnYkien = findViewById(R.id.btnYkien);
+        btnYkien.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent yk = new Intent(Feedback1.this, Feedback2.class);
+                startActivity(yk);
+            }
+        });
+
     }
+
     private void bottomNav() {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.user);
@@ -41,7 +52,7 @@ public class UserPage extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.Homepage:
-                        Intent courses = new Intent(UserPage.this, homepage.class);
+                        Intent courses = new Intent(Feedback1.this, homepage.class);
                         startActivity(courses);
                         return true;
 
@@ -49,11 +60,11 @@ public class UserPage extends AppCompatActivity {
                         return true;
 
                     case R.id.calendar:
-                        Intent user = new Intent(UserPage.this, lichhoc.class);
+                        Intent user = new Intent(Feedback1.this, lichhoc.class);
                         startActivity(user);
                         return true;
                     case R.id.courses:
-                        Intent calendar = new Intent(UserPage.this, Courses.class);
+                        Intent calendar = new Intent(Feedback1.this, Courses.class);
                         startActivity(calendar);
                         return true;
                 }
@@ -61,6 +72,5 @@ public class UserPage extends AppCompatActivity {
                 return false;
             }
         });
-
     }
 }

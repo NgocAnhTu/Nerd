@@ -67,7 +67,7 @@ public class DetailNewsAdapter extends BaseAdapter {
 
         return view;
     }
-    public static class  ViewHolder {
+    public static class ViewHolder {
         ImageView imvdetailBlog;
         TextView txtdetailTitle,txtdetailDate_name, txtdetailContent;
     }

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black" />
+    <!-- RadioGroup for grouping of RadioButton-->
+    <RadioGroup
+        android:id="@+id/rdg_danhgia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/hl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="Hài lòng"
+            android:textColor="#000" />
+
+        <RadioButton
+            android:id="@+id/khl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="Không hài lòng"
+            android:textColor="#000" />
+
+        <RadioButton
+            android:id="@+id/rathl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="Rất hài lòng"
+            android:textColor="#000" />
+
+        <RadioButton
+            android:id="@+id/ratkhl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="Rất không hài lòng"
+            android:textColor="#000" />
+    </RadioGroup>
+
+</LinearLayout>

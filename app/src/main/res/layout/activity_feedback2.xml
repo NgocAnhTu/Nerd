@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    tools:context=".Feedback2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Bạn muốn Nerd cải thiện về điều gì?"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="100dp"
+                android:background="@drawable/khung">
+
+                <EditText
+                    android:id="@+id/edt_Feedback1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Bạn có sẵn sàng giới thiệu Nerd với bạn bè để nhận ưu đãi giảm giá cho khóa học?"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:background="@drawable/khung">
+
+                <EditText
+                    android:id="@+id/edt_Feedback2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_guiykien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gửi ý kiến"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#1B4965"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

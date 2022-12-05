@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:background="@drawable/khung1"
+    tools:context=".LichSuLopHoc_feedback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <ImageButton
+            android:id="@+id/imbBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow_black"
+            android:background="@null"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LỊCH SỬ LỚP HỌC"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="Nhận xét của học viên"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/feedback"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtNhanXetCuaHV"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/khung_border"
+        android:hint="Ví dụ:  Giáo viên giảng bài dễ hiểu, nhiệt tình."
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnSendFeedback"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Gửi"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="17sp"
+        android:layout_gravity="center"
+        android:background="#1B4965"
+        app:backgroundTint="#1B4965"/>
+
+</LinearLayout>

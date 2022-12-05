@@ -1,4 +1,21 @@
 <resources>
     <string name="app_name">DoAnCK</string>
     <string name="ketqua"> <u>70 kết quả</u> </string>
+    <string-array name="questions">
+        <item>ĐÁNH GIÁ GIÁO VIÊN \n 1. Kỹ năng sư phạm \n 1.1. Giáo viên tạo hứng thú trong buổi học</item>
+        <item>1.2. Giáo viên giảng bài dễ hiểu</item>
+        <item>2. Kỹ năng tương tác \n 2.1. Giáo viên thân thiện với học viên</item>
+        <item>2.2. Giáo viên có cách giảng dạy phù hợp với các đối tượng học viên khác nhau</item>
+        <item>2.3 Giáo viên sử dụng nhiều hình thức trò chơi thú vị</item>
+
+        <item>\n ĐÁNH GIÁ NỘI DUNG GIẢNG DẠY \n 1. Giáo viên có sự liên hệ giữa lý thuyết và thực tiễn trong giảng dạy</item>
+        <item>2. Giáo viên cập nhật liên tục các nội dung và thông tin mới liên quan tới khóa học</item>
+        <item>3. Nội dung giảng dạy vừa sức đối với học viên</item>
+        <item>4. Nội dung giảng dạy thiết thực, hữu ích</item>
+
+        <item>\n ĐÁNH GIÁ DỊCH VỤ NERD \n 1. Bạn nắm rõ liệu trình học, quy định lớp học và cách học của Nerd qua tư vấn</item>
+        <item>2. Bạn biết cách sử dụng Nerd system</item>
+        <item>3. Bạn hiểu rõ về tiêu chí và quyền lợi cam kết đầu ra</item>
+    </string-array>
+
 </resources>

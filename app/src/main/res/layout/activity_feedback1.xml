@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feedback1">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:menu="@menu/bottom_nav_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#1B4965"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/khung2"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/icon"/>
+            <TextView
+                android:id="@+id/txtTen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Nguyen Tue Van"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnKhaosat"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Thực hiện khảo sát"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:backgroundTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnYkien"
+            android:backgroundTint="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Ý kiến khác"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
