@@ -43,8 +43,9 @@ public class UserPage extends AppCompatActivity {
         setContentView(R.layout.activity_user_page);
 
         linkViews();
-        bottomNav();
         setEvents();
+        bottomNav();
+
 
         authProfile = FirebaseAuth.getInstance();
         FirebaseUser firebaseUser = authProfile.getCurrentUser();
