@@ -3,9 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_assignments_nerd.xml" value="0.246875" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_change_email.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_change_language.xml" value="0.1933876811594203" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_change_password.xml" value="0.1933876811594203" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_courses.xml" value="0.1947463768115942" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_dangkythi.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_detail_gv1.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_detail_gv2.xml" value="0.2604166666666667" />
-        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_homepage.xml" value="0.1" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_detailed_assignments.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_detailed_payment.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_detailed_proofread.xml" value="0.1947463768115942" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_dieukhoan.xml" value="0.4" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_ghichu.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_homepage.xml" value="0.264" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_khaosat.xml" value="0.1933876811594203" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_khoahocchitiet.xml" value="0.1947463768115942" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_payments.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_thanh_toan_thanh_cong.xml" value="0.2" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_thi_tieng_anh.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_user_info.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/activity_ykienkhac.xml" value="0.1933876811594203" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/dialog_suaghichu.xml" value="0.4" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/dialog_themghichu.xml" value="0.1" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/layout/item_note.xml" value="0.1171875" />
+        <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd-1212/app/src/main/res/menu/them_ghichu.xml" value="0.259375" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/drawable-v24/gradientglass.xml" value="0.146" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/drawable-v24/rdbg.xml" value="0.146" />
         <entry key="..\:/Users/ryuzi/AndroidStudioProjects/Nerd/app/src/main/res/drawable-v24/rdbutton.xml" value="0.15" />

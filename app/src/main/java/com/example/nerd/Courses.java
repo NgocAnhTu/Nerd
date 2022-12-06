@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -16,6 +18,16 @@ public class Courses extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_courses);
         bottomNav();
+
+        ImageView imvIE65 = findViewById(R.id.imv_IELTS65);
+
+        imvIE65.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Courses.this, khoahocchitiet.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void bottomNav() {

@@ -28,7 +28,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
 public class homepage extends AppCompatActivity {
-    TextView txtName;
+    TextView txtName, txtGhiChu, txtBaiTap, txtDangKyThi;
     String name;
     ImageView imvavatar,imbBlog1, ibNoti, imbBlog2, imbBlog3;
     ImageButton imbCourse1, imbGV1, imbGV2, imbGV3;
@@ -74,6 +74,9 @@ public class homepage extends AppCompatActivity {
 
     private void linkViews() {
         txtName = findViewById(R.id.txt_Name);
+        txtGhiChu = findViewById(R.id.txt_ghichu);
+        txtBaiTap = findViewById(R.id.txt_baitap);
+        txtDangKyThi = findViewById(R.id.txt_dangkithi);
         imbCourse1 = findViewById(R.id.imbCourse1);
         imvavatar = findViewById(R.id.imv_avatar);
         imbBlog1 = findViewById(R.id.imb_Blog1);
@@ -185,6 +188,30 @@ public class homepage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent gv3 = new Intent(homepage.this, DetailGV2.class);
                 startActivity(gv3);
+            }
+        });
+
+        txtGhiChu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(homepage.this, Ghichu.class);
+                startActivity(intent);
+            }
+        });
+
+        txtBaiTap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(homepage.this, Assignments_Nerd.class);
+                startActivity(intent);
+            }
+        });
+
+        txtDangKyThi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(homepage.this, dangkythi.class);
+                startActivity(intent);
             }
         });
     }

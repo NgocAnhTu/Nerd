@@ -15,35 +15,5 @@ public class Khaosat extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_khaosat);
-
-        bottomNav();
-    }
-
-    private void bottomNav() {
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.Homepage);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.Homepage:
-                        return true;
-                    case R.id.courses:
-                        startActivity(new Intent(getApplicationContext(),Courses.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                    case R.id.calendar:
-                        startActivity(new Intent(getApplicationContext(), lichhoc.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                    case R.id.user:
-                        startActivity(new Intent(getApplicationContext(),UserPage.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                }
-                return false;
-            }
-        });
     }
 }

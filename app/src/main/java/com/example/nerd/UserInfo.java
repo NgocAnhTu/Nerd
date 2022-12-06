@@ -54,7 +54,6 @@ public class UserInfo extends AppCompatActivity {
         setContentView(R.layout.activity_user_info);
         linkViews();
         setEvents();
-        bottomNav();
 
         authProfile = FirebaseAuth.getInstance();
         FirebaseUser firebaseUser = authProfile.getCurrentUser();
@@ -179,30 +178,6 @@ public class UserInfo extends AppCompatActivity {
                 Intent intent = new Intent(UserInfo.this, UploadAvatar.class);
                 startActivity(intent);
                 finish();
-            }
-        });
-    }
-
-    private void bottomNav() {
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.Homepage:
-                        startActivity(new Intent(getApplicationContext(), homepage.class));
-                        return true;
-                    case R.id.courses:
-                        startActivity(new Intent(getApplicationContext(), Courses.class));
-                        return true;
-                    case R.id.calendar:
-                        startActivity(new Intent(getApplicationContext(), Calendar.class));
-                        return true;
-                    case R.id.user:
-                        return true;
-                }
-                return false;
             }
         });
     }
