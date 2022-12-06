@@ -109,9 +109,10 @@ public class UserPage extends AppCompatActivity {
                         return true;
                     case R.id.calendar:
                         startActivity(new Intent(getApplicationContext(), Calendar.class));
+                        Intent user = new Intent(UserPage.this, lichhoc.class);
+                        startActivity(user);
                         return true;
                     case R.id.user:
-                        return true;
                 }
                 return false;
             }

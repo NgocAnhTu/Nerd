@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".LichSuLopHojc">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <ImageButton
+                android:id="@+id/imbBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow_black"
+                android:background="@null"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LỊCH SỬ LỚP HỌC"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/khung_border"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:src="@drawable/classstatus"/>
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Tình trạng lớp học"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hoàn thành"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="#1B4965"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="#DBF4F6"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/khung_border"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:src="@drawable/book"/>
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Tài liệu"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/txt_tailieu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="https://bom.so/NOfhIN"
+                    android:textColorLink="#1B4965"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="#DBF4F6"
+                    android:layout_gravity="center"
+                    android:autoLink="web"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/khung_border"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:src="@drawable/vid"/>
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Video"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/txt_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="https://bom.so/6RoiVm"
+                    android:textColorLink="#1B4965"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="#DBF4F6"
+                    android:layout_gravity="center"
+                    android:autoLink="web"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/khung2"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nhận xét của giáo viên"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtNhanXetCuaGV"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/khung_border"
+                android:gravity="center"
+                android:text="Chưa tập trung, còn thụ động"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đánh giá của học viên"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:background="@drawable/khung_border_picked"
+            app:backgroundTint="@null"/>
+    </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>

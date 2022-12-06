@@ -1,9 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     tools:context=".lichhoc">
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/imbBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow_black"
+            android:background="@null" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Khóa học của tôi"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="10dp">
+        <Button
+            android:id="@+id/btnLichsulophoc"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Lịch sử lớp học"
+            android:textColor="@color/white"
+            app:backgroundTint="@null"
+            android:textSize="11sp"
+            android:background="@drawable/khung_border_picked"
+            android:layout_marginRight="10dp"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/btnLophocsapdienra"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Lớp học sắp diễn ra"
+            app:backgroundTint="@null"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:background="@drawable/khung_border"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvHienThiLopHoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:divider="@color/white"
+        android:dividerHeight="10sp" />
+
+</LinearLayout>
